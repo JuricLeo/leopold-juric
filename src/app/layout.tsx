@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 
 import { ThemeProvider } from "@/components/global/theme-provider";
+import ThemeDataProvider from "@/context/theme-data-provider";
 
 const font = JetBrains_Mono({
   variable: "--font-geist-sans",
@@ -22,14 +23,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${font.variable} antialiased`}>
+      <body className={`antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <ThemeDataProvider>{children}</ThemeDataProvider>
         </ThemeProvider>
       </body>
     </html>
