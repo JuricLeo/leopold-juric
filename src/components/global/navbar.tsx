@@ -1,0 +1,111 @@
+"use client";
+
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+import { useState } from "react";
+
+import { cn } from "@/lib/utils";
+
+import { ModeToggle } from "./mode-toggle";
+import { ThemeToggle } from "./theme-toggle";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+
+import { Menu } from "lucide-react";
+import { SiGithub, SiLinkedin } from "react-icons/si";
+
+const routes = [
+  {
+    label: "Home",
+    href: "/",
+  },
+  {
+    label: "My work",
+    href: "/work",
+  },
+  {
+    label: "Blog",
+    href: "/blog",
+  },
+];
+
+export const Navbar = () => {
+  const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <nav className="flex justify-between items-center py-10">
+      <div className="flex items-center gap-4">
+        <Link href="/" className="text-xl">
+          LJ
+        </Link>
+        <div className="gap-4 hidden md:flex">
+          {routes.map((route) => (
+            <Link
+              className={cn(
+                "px-4 py-2 rounded-md",
+                pathname === route.href && "bg-muted"
+              )}
+              key={route.href}
+              href={route.href}
+            >
+              {route.label}
+            </Link>
+          ))}
+        </div>
+      </div>
+      <Sheet open={isOpen} onOpenChange={setIsOpen}>
+        <SheetTrigger className="md:hidden">
+          <Menu className="cursor-pointer size-7" />
+        </SheetTrigger>
+        <SheetContent side="top" className="bg-secondary min-h-screen">
+          <SheetHeader>
+            <SheetTitle className="hidden"></SheetTitle>
+            <SheetDescription className="hidden"></SheetDescription>
+          </SheetHeader>
+          <div className="gap-8 flex flex-col mx-6 h-[calc(100vh-4rem)]">
+            {routes.map((route) => (
+              <Link
+                className={cn(
+                  "rounded-md w-fit px-4 py-2 text-2xl text-primary/50 font-bold hover:underline",
+                  pathname === route.href && "text-primary bg-primary/10"
+                )}
+                onClick={() => setIsOpen(false)}
+                key={route.href}
+                href={route.href}
+              >
+                {route.label}
+              </Link>
+            ))}
+            <div className="mt-auto mb-12 flex flex-col mx-auto justify-center">
+              <div className="flex">
+                <ThemeToggle />
+                <ModeToggle />
+              </div>
+              <div className="flex mx-auto gap-4 mt-4">
+                <Link href="https://github.com/JuricLeo" target="_blank">
+                  <SiGithub size={24} />
+                </Link>
+                <Link
+                  href="https://www.linkedin.com/in/leopold-jurić"
+                  target="_blank"
+                >
+                  <SiLinkedin size={24} />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </SheetContent>
+      </Sheet>
+      <div className="hidden md:block">
+        <ModeToggle />
+      </div>
+    </nav>
+  );
+};

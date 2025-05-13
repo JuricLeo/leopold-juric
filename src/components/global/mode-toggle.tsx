@@ -22,7 +22,7 @@ export function ModeToggle() {
       variant="ghost"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
-      {theme === "light" ? <Moon /> : <Sun />}
+      {theme === "light" ? <Moon className="size-5" /> : <Sun className="size-5" />}
     </Button>
   );
 }

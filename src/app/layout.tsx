@@ -19,7 +19,6 @@ import {
 import { ThemeProvider } from "@/components/global/theme-provider";
 import ThemeDataProvider from "@/context/theme-data-provider";
 
-// Load fonts
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   variable: "--font-jetbrains-mono",
