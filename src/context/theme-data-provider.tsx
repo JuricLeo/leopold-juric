@@ -11,8 +11,8 @@ export default function ThemeDataProvider({ children }: ThemeProviderProps) {
   const getSavedThemeColor = () => {
     try {
       return (localStorage.getItem("themeColor") as ThemeColors) || "Caffeine";
-    } catch (error) {
-      "Caffeine" as ThemeColors;
+    } catch {
+      return "Caffeine" as ThemeColors;
     }
   };
 
@@ -29,7 +29,7 @@ export default function ThemeDataProvider({ children }: ThemeProviderProps) {
     if (!isMounted) {
       setIsMounted(true);
     }
-  }, [themeColor, theme]);
+  }, [themeColor, theme, isMounted]);
 
   if (!isMounted) {
     return null;

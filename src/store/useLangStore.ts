@@ -1,4 +1,5 @@
 import { create } from "zustand";
+import translations from "@/constants/lang.json";
 
 interface LanguageState {
   selectedLanguage: string;
@@ -8,7 +9,6 @@ interface LanguageState {
 }
 
 const useLangStore = create<LanguageState>((set) => {
-  const translations = require("@/constants/lang.json");
   let selectedLanguage = "en";
 
   if (typeof window !== "undefined") {
@@ -25,7 +25,13 @@ const useLangStore = create<LanguageState>((set) => {
         localStorage.setItem("selectedLanguage", language);
       }
     },
-    t: (key) => translations[selectedLanguage][key] || key,
+    t: (key) => {
+      const lang = selectedLanguage as keyof typeof translations;
+      return (
+        translations[lang]?.[key as keyof (typeof translations)[typeof lang]] ||
+        key
+      );
+    },
   };
 });
 
