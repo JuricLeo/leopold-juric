@@ -1,15 +1,117 @@
 import "./globals.css";
 
 import type { Metadata } from "next";
-import { JetBrains_Mono } from "next/font/google";
+import {
+  JetBrains_Mono,
+  Merriweather,
+  DM_Sans,
+  Outfit,
+  Oxanium,
+  Architects_Daughter,
+  Source_Serif_4,
+  Libre_Baskerville,
+  Lora,
+  IBM_Plex_Mono,
+  Fira_Code,
+  Space_Mono,
+} from "next/font/google";
 
 import { ThemeProvider } from "@/components/global/theme-provider";
 import ThemeDataProvider from "@/context/theme-data-provider";
 
-const font = JetBrains_Mono({
-  variable: "--font-geist-sans",
+// Load fonts
+const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
+  variable: "--font-jetbrains-mono",
+  display: "swap",
 });
+
+const merriweather = Merriweather({
+  weight: ["300", "400", "700", "900"],
+  subsets: ["latin"],
+  variable: "--font-merriweather",
+  display: "swap",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-dm-sans",
+  display: "swap",
+});
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-outfit",
+  display: "swap",
+});
+
+const oxanium = Oxanium({
+  subsets: ["latin"],
+  variable: "--font-oxanium",
+  display: "swap",
+});
+
+const architectsDaughter = Architects_Daughter({
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--font-architects-daughter",
+  display: "swap",
+});
+
+const sourceSerif = Source_Serif_4({
+  subsets: ["latin"],
+  variable: "--font-source-serif",
+  display: "swap",
+});
+
+const libreBaskerville = Libre_Baskerville({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-libre-baskerville",
+  display: "swap",
+});
+
+const lora = Lora({
+  subsets: ["latin"],
+  variable: "--font-lora",
+  display: "swap",
+});
+
+const ibmPlexMono = IBM_Plex_Mono({
+  weight: ["400", "500", "700"],
+  subsets: ["latin"],
+  variable: "--font-ibm-plex-mono",
+  display: "swap",
+});
+
+const firaCode = Fira_Code({
+  subsets: ["latin"],
+  variable: "--font-fira-code",
+  display: "swap",
+});
+
+const spaceMono = Space_Mono({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-space-mono",
+  display: "swap",
+});
+
+// Combine font variables
+const fontVariables = [
+  jetbrainsMono.variable,
+  merriweather.variable,
+  dmSans.variable,
+  outfit.variable,
+  oxanium.variable,
+  architectsDaughter.variable,
+  sourceSerif.variable,
+  libreBaskerville.variable,
+  lora.variable,
+  ibmPlexMono.variable,
+  firaCode.variable,
+  spaceMono.variable,
+].join(" ");
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,8 +124,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`antialiased`}>
+    <html lang="en" suppressHydrationWarning className={fontVariables}>
+      <body className="antialiased">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

@@ -37,9 +37,9 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-mono);
-  --font-serif: var(--font-serif);
+  --font-sans: var(--fontSans);
+  --font-mono: var(--fontMono);
+  --font-serif: var(--fontSerif);
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -62,5 +62,18 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
   }
 }
