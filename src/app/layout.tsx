@@ -96,7 +96,6 @@ const spaceMono = Space_Mono({
   display: "swap",
 });
 
-// Combine font variables
 const fontVariables = [
   jetbrainsMono.variable,
   merriweather.variable,
@@ -127,7 +126,7 @@ export default function RootLayout({
       <body className="antialiased">
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >

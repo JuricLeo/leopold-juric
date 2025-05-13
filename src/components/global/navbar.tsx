@@ -5,7 +5,9 @@ import Link from "next/link";
 import { useState } from "react";
 
 import { cn } from "@/lib/utils";
+import useLangStore from "@/store/useLangStore";
 
+import ChangeLanguage from "./change-lang";
 import { ModeToggle } from "./mode-toggle";
 import { ThemeToggle } from "./theme-toggle";
 import {
@@ -20,24 +22,26 @@ import {
 import { Menu } from "lucide-react";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 
-const routes = [
-  {
-    label: "Home",
-    href: "/",
-  },
-  {
-    label: "My work",
-    href: "/work",
-  },
-  {
-    label: "Blog",
-    href: "/blog",
-  },
-];
-
 export const Navbar = () => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+
+  const { t } = useLangStore();
+
+  const routes = [
+    {
+      label: t("home"),
+      href: "/",
+    },
+    {
+      label: t("myWork"),
+      href: "/work",
+    },
+    {
+      label: t("blog"),
+      href: "/blog",
+    },
+  ];
 
   return (
     <nav className="flex justify-between items-center py-10">
@@ -88,6 +92,7 @@ export const Navbar = () => {
                 <ThemeToggle />
                 <ModeToggle />
               </div>
+              <ChangeLanguage />
               <div className="flex mx-auto gap-4 mt-4">
                 <Link href="https://github.com/JuricLeo" target="_blank">
                   <SiGithub size={24} />
@@ -103,8 +108,9 @@ export const Navbar = () => {
           </div>
         </SheetContent>
       </Sheet>
-      <div className="hidden md:block">
+      <div className="hidden md:flex items-center">
         <ModeToggle />
+        <ChangeLanguage />
       </div>
     </nav>
   );
