@@ -7,7 +7,7 @@ export default function PageLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className="max-w-screen-2xl mx-auto px-6">
+    <main className="max-w-screen-xl mx-auto px-6">
       <Navbar />
       {children}
       <Footer />
