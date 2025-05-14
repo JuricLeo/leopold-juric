@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Default",
+    "primary": "#737373",
+    "secondary": "#f5f5f5",
+    "accent": "#f5f5f5",
+    "darkPrimary": "#737373",
+    "darkSecondary": "#262626",
+    "darkAccent": "#404040",
+    "font": "var(--font-jetbrains-mono), monospace"
+  },
+  {
+    "name": "Caffeine",
+    "primary": "#644a40",
+    "secondary": "#ffdfb5",
+    "accent": "#e8e8e8",
+    "darkPrimary": "#ffe0c2",
+    "darkSecondary": "#393028",
+    "darkAccent": "#2a2a2a",
+    "font": "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'"
+  },
+  {
+    "name": "VintagePaper",
+    "primary": "#a67c52",
+    "secondary": "#e2d8c3",
+    "accent": "#d4c8aa",
+    "darkPrimary": "#c0a080",
+    "darkSecondary": "#4a4039",
+    "darkAccent": "#59493e",
+    "font": "var(--font-libre-baskerville), serif"
+  },
+  {
+    "name": "Notebook",
+    "primary": "#606060",
+    "secondary": "#dedede",
+    "accent": "#f3eac8",
+    "darkPrimary": "#b0b0b0",
+    "darkSecondary": "#5a5a5a",
+    "darkAccent": "#e0e0e0",
+    "font": "Architects Daughter, sans-serif"
+  },
+  {
+    "name": "NeoBrutalism",
+    "primary": "#ff3333",
+    "secondary": "#ffff00",
+    "accent": "#0066ff",
+    "darkPrimary": "#ff6666",
+    "darkSecondary": "#ffff33",
+    "darkAccent": "#3399ff",
+    "font": "DM Sans, sans-serif"
+  },
+  {
+    "name": "KodamaGrove",
+    "primary": "#8d9d4f",
+    "secondary": "#decea0",
+    "accent": "#dbc894",
+    "darkPrimary": "#8a9f7b",
+    "darkSecondary": "#5a5345",
+    "darkAccent": "#a18f5c",
+    "font": "Merriweather, serif"
+  },
+  {
+    "name": "Doom64",
+    "primary": "#b71c1c",
+    "secondary": "#f0f0ff",
+    "accent": "#00ffcc",
+    "darkPrimary": "#e53935",
+    "darkSecondary": "#689f38",
+    "darkAccent": "#64b5f6",
+    "font": "Oxanium, sans-serif"
+  },
+  {
+    "name": "Cyberpunk",
+    "primary": "#ff00c8",
+    "secondary": "#393028",
+    "accent": "#2a2a2a",
+    "darkPrimary": "#ff00c8",
+    "darkSecondary": "#1e1e3f",
+    "darkAccent": "#00ffcc",
+    "font": "Outfit, sans-serif"
+  },
+  {
+    "name": "Perpetuity",
+    "primary": "#06858e",
+    "secondary": "#d9eaea",
+    "accent": "#c9e5e7",
+    "darkPrimary": "#4de8e8",
+    "darkSecondary": "#164955",
+    "darkAccent": "#164955",
+    "font": "var(--font-jetbrains-mono), monospace"
+  }
+]
