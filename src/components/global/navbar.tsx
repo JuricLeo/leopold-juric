@@ -94,12 +94,17 @@ export const Navbar = () => {
               </div>
               <ChangeLanguage />
               <div className="flex mx-auto gap-4 mt-4">
-                <a href="https://github.com/JuricLeo" target="_blank">
+                <a
+                  href="https://github.com/JuricLeo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <SiGithub size={24} />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/leopold-jurić"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <SiLinkedin size={24} />
                 </a>

@@ -78,13 +78,13 @@ export const Hero = () => {
           <i>{t("missionQuote")}</i>
         </div>
       </div>
-      <div ref={ref} className="flex items-center justify-between mt-2">
+      <div ref={ref} className="flex flex-col md:flex-row gap-2 md:gap-0 items-left md:items-center md:justify-between mt-2">
         <div className="flex gap-2 items-center opacity-75 text-sm">
           <GitMerge size={16} />
           Merged PRs:
           {isVisible && (
             <>
-              <CountUp end={600} />
+              <CountUp duration={3.5} end={600} />
               <span className="-ml-1">+</span>
             </>
           )}
@@ -94,7 +94,7 @@ export const Hero = () => {
           Contributions last year:
           {isVisible && (
             <>
-              <CountUp end={2420} />
+              <CountUp duration={3.5} end={2420} />
               <span className="-ml-1">+</span>
             </>
           )}
@@ -104,7 +104,7 @@ export const Hero = () => {
           Projects:
           {isVisible && (
             <>
-              <CountUp end={25} />
+              <CountUp duration={3.5} end={25} />
               <span className="-ml-1">+</span>
             </>
           )}

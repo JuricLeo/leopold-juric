@@ -19,7 +19,12 @@ export const Footer = () => {
       <p>Leopold Jurić</p>
       <div className="flex gap-2">
         {socials.map((social) => (
-          <a href={social.url} key={social.name} target="_blank">
+          <a
+            rel="noopener noreferrer"
+            href={social.url}
+            key={social.name}
+            target="_blank"
+          >
             {social.icon}
           </a>
         ))}
