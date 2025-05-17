@@ -1,13 +1,10 @@
 "use client";
 
-import { useTheme } from "next-themes";
-
 import { useThemeContext } from "@/context/theme-data-provider";
-import availableThemeColors from "@/constants/themeColors.json";
+import availableThemeColors from "@/constants/theme-colors.json";
 
 export const ChooseTheme = () => {
-  const { themeColor, setThemeColor } = useThemeContext();
-  const { theme } = useTheme();
+  const { setThemeColor } = useThemeContext();
 
   return (
     <section className="w-full max-w-[900px] mx-auto flex justify-center items-center flex-col">

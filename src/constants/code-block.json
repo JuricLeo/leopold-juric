@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Confetti.jsx",
+    "icon": "siJavascript",
+    "code": "import { useState } from 'react';\nimport confetti from 'canvas-confetti';\n\nexport default function AnimatedConfetti() {\n  const [isAnimating, setIsAnimating] = useState(false);\n\n  const handleExecute = () => {\n    setIsAnimating(true);\n    confetti({\n      particleCount: 100,\n      spread: 70,\n      origin: { y: 0.6 },\n      colors: [\"#ff0000\", \"#00ff00\", \"#0000ff\", \"#ffff00\", \"#ff00ff\"]\n    });\n\n    setTimeout(() => setIsAnimating(false), 300);\n  };\n\n  return (\n    <>\n      <div className={`transition-transform duration-300 ${isAnimating ? 'scale-95' : 'scale-100'}`}>\n        <h2>Click the button to see the animation!</h2>\n      </div>\n      <button onClick={handleExecute} className=\"bg-black text-white px-4 py-2 rounded-md\">\n        Execute\n      </button>\n    </>\n  );\n}",
+    "language": "jsx"
+  },
+  {
+    "name": "Confetti.tsx",
+    "icon": "siTypescript",
+    "code": "import { useState } from 'react';\nimport confetti from 'canvas-confetti';\n\nexport default function AnimatedConfetti() {\n  const [isAnimating, setIsAnimating] = useState<boolean>(false);\n\n  const handleExecute = (): void => {\n    setIsAnimating(true);\n    confetti({\n      particleCount: 100,\n      spread: 70,\n      origin: { y: 0.6 },\n      colors: [\"#ff0000\", \"#00ff00\", \"#0000ff\", \"#ffff00\", \"#ff00ff\"]\n    });\n\n    setTimeout(() => setIsAnimating(false), 300);\n  };\n\n  return (\n    <>\n      <div className={`transition-transform duration-300 ${isAnimating ? 'scale-95' : 'scale-100'}`}>\n        <h2>Click the button to see the animation!</h2>\n      </div>\n      <button onClick={handleExecute} className=\"bg-black text-white px-4 py-2 rounded-md\">\n        Execute\n      </button>\n    </>\n  );\n}",
+    "language": "tsx"
+  },
+  {
+    "name": "Confetti.php",
+    "icon": "siPhp",
+    "code": "<?php\n?>\n<!DOCTYPE html>\n<html>\n<head>\n  <title>PHP Animated Confetti</title>\n  <script src=\"https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js\"></script>\n  <style>\n    .animated-box {\n      transition: transform 0.3s;\n    }\n    .animated-box.animating {\n      transform: scale(0.95);\n    }\n    .btn {\n      background: black;\n      color: white;\n      padding: 0.5rem 1rem;\n      border-radius: 0.375rem;\n      border: none;\n      cursor: pointer;\n    }\n  </style>\n</head>\n<body>\n  <div id=\"animatedBox\" class=\"animated-box\">\n    <h2>Click the button to see the animation!</h2>\n  </div>\n  <button onclick=\"handleExecute()\" class=\"btn\">Execute</button>\n\n  <script>\n    function handleExecute() {\n      const box = document.getElementById('animatedBox');\n      box.classList.add('animating');\n      \n      confetti({\n        particleCount: 100,\n        spread: 70,\n        origin: { y: 0.6 },\n        colors: ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff']\n      });\n\n      setTimeout(() => {\n        box.classList.remove('animating');\n      }, 300);\n    }\n  </script>\n</body>\n</html>",
+    "language": "php"
+  }
+]

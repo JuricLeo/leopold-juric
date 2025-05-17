@@ -3,7 +3,7 @@
 import { useTheme } from "next-themes";
 import * as React from "react";
 
-import availableThemeColors from "@/constants/themeColors.json";
+import availableThemeColors from "@/constants/theme-colors.json";
 import { useThemeContext } from "@/context/theme-data-provider";
 
 import {

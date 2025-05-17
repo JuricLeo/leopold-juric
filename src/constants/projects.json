@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Satnica",
+    "description": "Satnica is a web application designed to simplify time tracking for students and employers. It allows students to easily log their work hours, while employers can manage and monitor their team's work time efficiently.",
+    "link": "",
+    "type": "Personal",
+    "date": "2025",
+    "stack": ["siLaravel", "siReact", "siTypescript", "siTailwindcss"],
+    "status": "Work in progress..."
+  },
+  {
+    "name": "Financial Focus",
+    "description": "Financial Focus is a web application where users can track their personal finances and get insights into their spending habits using interactive graphs.",
+    "link": "https://financial-focus.vercel.app",
+    "type": "Personal",
+    "date": "2024",
+    "stack": ["siNextdotjs", "siTailwindcss", "siClerk", "siPrisma"],
+    "status": ""
+  },
+  {
+    "name": "Pets of TVZ",
+    "description": "Pets of TVZ is a simple web application where users (students of University of Applied Sciences in Zagreb) can share information about their pets with one another.",
+    "link": "https://pets-of-tvz.vercel.app",
+    "type": "Personal",
+    "date": "2024",
+    "stack": ["siNextdotjs", "siTailwindcss", "siClerk", "siPrisma"],
+    "status": ""
+  },
+  {
+    "name": "Am I cooked",
+    "description": "Goofy app for students to check if they are 'cooked' if they start studying now, based on the time left until their exams. This app was made in < 1 hour for fun.",
+    "link": "https://am-i-cooked.vercel.app/",
+    "type": "Personal",
+    "date": "2025",
+    "stack": ["siNextdotjs", "siTailwindcss"],
+    "status": ""
+  },
+  {
+    "name": "Beriko",
+    "description": "Company website for Beriko, a company that builds high-quality prefabricated buildings: halls, bungalows, warehouses, workshops and garages.",
+    "link": "https://beriko.com",
+    "type": "Freelance",
+    "date": "2024",
+    "stack": ["siNextdotjs", "siTailwindcss", "siSupabase"],
+    "status": ""
+  },
+  {
+    "name": "Klesarstvo Kirinec Dejan",
+    "description": "Company website for Klesarstvo Kirinec Dejan, a company that specializes in stone carving and shaping, creating custom stone architecture, stone installation and restoration of stone structures.",
+    "link": "https://www.klesarstvo-kirinec-dejan.com",
+    "type": "Freelance",
+    "date": "2023",
+    "stack": ["siHtml5", "siCss", "siJavascript"],
+    "status": ""
+  },
+  {
+    "name": "Neven Jurić d.o.o.",
+    "description": "Company website for Neven Jurić d.o.o., a company that offers bookkeeping services for small businesses, sole proprietorships, family farms, and citizen associations.",
+    "link": "https://nevenjuric.com.hr",
+    "type": "Freelance",
+    "date": "2022",
+    "stack": ["siHtml5", "siCss", "siJavascript"],
+    "status": ""
+  },
+  {
+    "name": "L'avor",
+    "description": "Company website for L'avor, a company that has years of experience in crafting ceramic furniture, combining cutting-edge production technology with an artistic touch in every unique piece.",
+    "link": "https://juricleo.github.io/l-avor/",
+    "type": "Freelance",
+    "date": "2023",
+    "stack": ["siHtml5", "siCss", "siJavascript"],
+    "status": "Not active anymore..."
+  },
+  {
+    "name": "Restaurant Royal",
+    "description": "Simple HTML/CSS/JS/PHP website for a restaurant. Focus is on design.",
+    "link": "https://github.com/JuricLeo/Royal",
+    "type": "Personal",
+    "date": "2022",
+    "stack": ["siHtml5", "siCss", "siJavascript", "siPhp"],
+    "status": ""
+  },
+  {
+    "name": "PentestPad",
+    "description": "A tool built by pentesters, for pentesters. Designed to solve the real challenges of security testing teams.",
+    "link": "https://www.pentestpad.com/",
+    "type": "Employment",
+    "date": "2025",
+    "stack": ["siNextdotjs", "siLaravel", "siLivewire", "siInertia"],
+    "status": ""
+  },
+  {
+    "name": "Pinky CyberSafe",
+    "description": "Pinky CyberSafe® is the ultimate cybersecurity solution designed specifically for small and medium enterprises (SMEs).",
+    "link": "https://www.pinkycs.com/",
+    "type": "Employment",
+    "date": "2025",
+    "stack": ["siLaravel", "siTailwindcss", "siLivewire"],
+    "status": ""
+  },
+  {
+    "name": "CCChelp",
+    "description": "Complete competent compliance for your business. Certs, Equipment & Vehicles, Get, all your Assets certified on time. Never miss your next schedule.",
+    "link": "https://ccc.help/",
+    "type": "Employment",
+    "date": "2025",
+    "stack": ["siLaravel", "siLivewire", "siTailwindcss"],
+    "status": ""
+  },
+  {
+    "name": "Discord",
+    "description": "Discord is a free voice, video, and text chat platform designed for communities, friends, and teams to connect and communicate in real time.",
+    "link": "https://discord.com/",
+    "type": "Clone",
+    "date": "2023",
+    "stack": ["siNextdotjs", "siTailwindcss", "siMysql", "siPrisma"],
+    "status": ""
+  },
+  {
+    "name": "Notion",
+    "description": "Notion is an all-in-one workspace where you can write, plan, organize, and collaborate through notes, databases, tasks, and more.",
+    "link": "https://www.notion.com/",
+    "type": "Clone",
+    "date": "2023",
+    "stack": ["siNextdotjs", "siTailwindcss", "siClerk"],
+    "status": ""
+  },
+  {
+    "name": "Spotify",
+    "description": "Spotify is a digital music streaming platform that gives you access to millions of songs, podcasts, and playlists from artists around the world.",
+    "link": "https://open.spotify.com/",
+    "type": "Clone",
+    "date": "2023",
+    "stack": ["siNextdotjs", "siTailwindcss", "siStripe"],
+    "status": ""
+  },
+  {
+    "name": "Airbnb",
+    "description": "Airbnb is an online platform that allows people to rent out their homes or book unique accommodations and experiences around the world.",
+    "link": "https://www.airbnb.com/",
+    "type": "Clone",
+    "date": "2023",
+    "stack": ["siNextdotjs", "siTailwindcss", "siPrisma", "siMongodb"],
+    "status": ""
+  },
+  {
+    "name": "LMS",
+    "description": "An LMS (Learning Management System) is a software platform used to create, deliver, and manage educational courses, training programs, or learning and development content.",
+    "link": "https://github.com/JuricLeo/lms-clone",
+    "type": "Clone",
+    "date": "2023",
+    "stack": ["siNextdotjs", "siTailwindcss", "siStripe", "siPrisma"],
+    "status": ""
+  },
+  {
+    "name": "E-commerce store and admin panel",
+    "description": "An e-commerce store is an online platform where customers can browse and purchase products, while the admin panel is a backend dashboard that allows store owners to manage products, orders, customers, and store settings.",
+    "link": "https://github.com/JuricLeo/e-commerce-store",
+    "type": "Clone",
+    "date": "2023",
+    "stack": ["siNextdotjs", "siTailwindcss", "siMysql", "siPrisma"],
+    "status": ""
+  },
+  {
+    "name": "AI SaaS Companion",
+    "description": "An AI SaaS Companion is a cloud-based tool powered by artificial intelligence designed to interact with the user based on their input.",
+    "link": "https://github.com/JuricLeo/ai-saas-companion",
+    "type": "Clone",
+    "date": "2023",
+    "stack": ["siNextdotjs", "siTailwindcss", "siMysql", "siStripe"],
+    "status": ""
+  },
+  {
+    "name": "Multi-functional AI SaaS",
+    "description": "A multi-functional AI SaaS platform that can talk, generate music, create videos, design images, and write code—offering an all-in-one creative and productivity companion powered by artificial intelligence.",
+    "link": "https://github.com/JuricLeo/AI-saas-Genius",
+    "type": "Clone",
+    "date": "2023",
+    "stack": ["siNextdotjs", "siTailwindcss", "siMysql", "siStripe"],
+    "status": ""
+  }
+]
