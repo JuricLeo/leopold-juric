@@ -7,35 +7,35 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
+  --color-card-foreground: var(--cardForeground);
   --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
+  --color-popover-foreground: var(--popoverForeground);
   --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-foreground: var(--primaryForeground);
   --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary-foreground: var(--secondaryForeground);
   --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
+  --color-muted-foreground: var(--mutedForeground);
   --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-foreground: var(--accentForeground);
   --color-destructive: var(--destructive);
-  --color-destructive-foreground: var(--destructive-foreground);
+  --color-destructive-foreground: var(--destructiveForeground);
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
+  --color-chart-1: var(--chart1);
+  --color-chart-2: var(--chart2);
+  --color-chart-3: var(--chart3);
+  --color-chart-4: var(--chart4);
+  --color-chart-5: var(--chart5);
   --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-foreground: var(--sidebarForeground);
+  --color-sidebar-primary: var(--sidebarPrimary);
+  --color-sidebar-primary-foreground: var(--sidebarPrimaryForeground);
+  --color-sidebar-accent: var(--sidebarAccent);
+  --color-sidebar-accent-foreground: var(--sidebarAccentForeground);
+  --color-sidebar-border: var(--sidebarBorder);
+  --color-sidebar-ring: var(--sidebarRing);
 
   --font-sans: var(--fontSans);
   --font-mono: var(--fontMono);
@@ -46,14 +46,14 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 
-  --shadow-2xs: var(--shadow-2xs);
-  --shadow-xs: var(--shadow-xs);
-  --shadow-sm: var(--shadow-sm);
+  --shadow-2xs: var(--shadow2xs);
+  --shadow-xs: var(--shadowXs);
+  --shadow-sm: var(--shadowSm);
   --shadow: var(--shadow);
-  --shadow-md: var(--shadow-md);
-  --shadow-lg: var(--shadow-lg);
-  --shadow-xl: var(--shadow-xl);
-  --shadow-2xl: var(--shadow-2xl);
+  --shadow-md: var(--shadowMd);
+  --shadow-lg: var(--shadowLg);
+  --shadow-xl: var(--shadowXl);
+  --shadow-2xl: var(--shadow2xl);
 }
 
 @layer base {

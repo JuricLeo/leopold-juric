@@ -14,17 +14,23 @@ interface ProjectProps {
 }
 
 export const Projects = ({ recent = false }: ProjectProps) => {
-  function linkText(type: string) {
-    if (type === "Clone") {
-      return "View official website";
-    } else if (type === "Personal") {
-      return "Visit website";
-    } else {
-      return "View project";
-    }
-  }
+  const wantedProjcets = [
+    "Satnica",
+    "PentestPad",
+    "Pinky CyberSafe",
+    "Financial Focus",
+    "CCChelp",
+    "Pets of TVZ",
+  ];
 
-  const displayedProjects = recent ? projects.slice(0, 3) : projects;
+  const displayedProjects = recent
+    ? projects
+        .filter((project) => wantedProjcets.includes(project.name))
+        .sort(
+          (a, b) =>
+            wantedProjcets.indexOf(a.name) - wantedProjcets.indexOf(b.name)
+        )
+    : projects;
 
   return (
     <section>
@@ -35,11 +41,11 @@ export const Projects = ({ recent = false }: ProjectProps) => {
             <div className="flex items-center gap-2">
               {project.link ? (
                 <a
-                  className="underline hover:opacity-80 inline-flex"
+                  className="hover:opacity-80 inline-flex"
                   href={project.link}
                   target="_blank"
                 >
-                  <h6 className="text-2xl font-bold text-primary flex">
+                  <h6 className="border-b border-primary text-2xl font-bold text-primary flex">
                     <span>{project.name}</span>
                     <ExternalLinkIcon className="size-4 ml-1.5 mt-1" />
                   </h6>
@@ -67,11 +73,15 @@ export const Projects = ({ recent = false }: ProjectProps) => {
             </p>
             <div className="flex flex-wrap gap-2 mb-2">
               {project.stack.map((item) => (
-                <StackItem isProject={true} key={item} icon={getIconByName(item)} />
+                <StackItem
+                  isProject={true}
+                  key={item}
+                  icon={getIconByName(item)}
+                />
               ))}
             </div>
             <Image
-              className="rounded-lg"
+              className="rounded-lg border"
               src={`/projects/${project.name}.webp`}
               alt={project.name}
               width={1685}

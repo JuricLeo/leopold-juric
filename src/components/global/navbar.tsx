@@ -7,6 +7,7 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 import useLangStore from "@/store/useLangStore";
 
+import { ChooseTheme } from "@/app/(pages)/(home)/components/choose-theme";
 import ChangeLanguage from "./change-lang";
 import { ModeToggle } from "./mode-toggle";
 import { ThemeToggle } from "./theme-toggle";
@@ -44,7 +45,7 @@ export const Navbar = () => {
   ];
 
   return (
-    <nav className="flex justify-between items-center py-10">
+    <nav className="sticky top-0 flex justify-between items-center py-8 z-20 backdrop-blur-sm bg-background/50 px-4">
       <div className="flex items-center gap-4">
         <Link href="/" className="text-xl">
           LJ
@@ -113,7 +114,8 @@ export const Navbar = () => {
           </div>
         </SheetContent>
       </Sheet>
-      <div className="hidden md:flex items-center">
+      <div className="hidden md:flex items-center gap-1">
+        <ChooseTheme />
         <ModeToggle />
         <ChangeLanguage />
       </div>

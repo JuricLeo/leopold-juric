@@ -1,12 +1,12 @@
 [
   {
     "name": "Default",
-    "primary": "#737373",
-    "secondary": "#f5f5f5",
-    "accent": "#f5f5f5",
-    "darkPrimary": "#737373",
-    "darkSecondary": "#262626",
-    "darkAccent": "#404040",
+    "primary": "#2b7fff",
+    "secondary": "#7b9ed8",
+    "accent": "#f4f4f5",
+    "darkPrimary": "#155dfc",
+    "darkSecondary": "#0040df",
+    "darkAccent": "#27272a",
     "font": "var(--font-jetbrains-mono), monospace"
   },
   {

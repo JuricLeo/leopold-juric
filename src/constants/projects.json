@@ -86,7 +86,7 @@
     "link": "https://www.pentestpad.com/",
     "type": "Employment",
     "date": "2025",
-    "stack": ["siNextdotjs", "siLaravel", "siLivewire", "siInertia"],
+    "stack": ["siNextdotjs", "siLaravel", "siReact", "siInertia"],
     "status": ""
   },
   {
@@ -110,7 +110,7 @@
   {
     "name": "Discord",
     "description": "Discord is a free voice, video, and text chat platform designed for communities, friends, and teams to connect and communicate in real time.",
-    "link": "https://discord.com/",
+    "link": "https://github.com/JuricLeo/discord-clone",
     "type": "Clone",
     "date": "2023",
     "stack": ["siNextdotjs", "siTailwindcss", "siMysql", "siPrisma"],
@@ -119,7 +119,7 @@
   {
     "name": "Notion",
     "description": "Notion is an all-in-one workspace where you can write, plan, organize, and collaborate through notes, databases, tasks, and more.",
-    "link": "https://www.notion.com/",
+    "link": "https://github.com/JuricLeo/notion-clone",
     "type": "Clone",
     "date": "2023",
     "stack": ["siNextdotjs", "siTailwindcss", "siClerk"],
@@ -128,7 +128,7 @@
   {
     "name": "Spotify",
     "description": "Spotify is a digital music streaming platform that gives you access to millions of songs, podcasts, and playlists from artists around the world.",
-    "link": "https://open.spotify.com/",
+    "link": "https://github.com/JuricLeo/spotify-clone",
     "type": "Clone",
     "date": "2023",
     "stack": ["siNextdotjs", "siTailwindcss", "siStripe"],
@@ -137,7 +137,7 @@
   {
     "name": "Airbnb",
     "description": "Airbnb is an online platform that allows people to rent out their homes or book unique accommodations and experiences around the world.",
-    "link": "https://www.airbnb.com/",
+    "link": "https://github.com/JuricLeo/next13-airbnb-clone",
     "type": "Clone",
     "date": "2023",
     "stack": ["siNextdotjs", "siTailwindcss", "siPrisma", "siMongodb"],
