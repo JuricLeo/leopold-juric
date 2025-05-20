@@ -3,6 +3,7 @@ import { AboutMe } from "./components/about-me";
 import { MyStack } from "./components/my-stack";
 import { Projects } from "./components/projects";
 import { homePageStackIcons } from "@/lib/stack";
+import { ContactMe } from "@/components/global/contact-me";
 
 export default function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default function HomePage() {
         <MyStack stack={homePageStackIcons} />
       </div>
       <Projects recent />
+      <ContactMe />
     </div>
   );
 }

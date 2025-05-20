@@ -81,7 +81,7 @@ export const Hero = () => {
       <div ref={ref} className="flex flex-col md:flex-row gap-2 md:gap-0 items-left md:items-center md:justify-between mt-2">
         <div className="flex gap-2 items-center opacity-75 text-sm">
           <GitMerge size={16} />
-          Merged PRs:
+          {t("mergedPRs")}:
           {isVisible && (
             <>
               <CountUp duration={3.5} end={600} />
@@ -91,7 +91,7 @@ export const Hero = () => {
         </div>
         <div className="flex gap-2 items-center opacity-75 text-sm">
           <GitGraph size={16} />
-          Contributions last year:
+          {t("contributionsLastYear")}:
           {isVisible && (
             <>
               <CountUp duration={3.5} end={2420} />
@@ -101,7 +101,7 @@ export const Hero = () => {
         </div>
         <div className="flex gap-2 items-center opacity-75 text-sm">
           <FolderCode size={16} />
-          Projects:
+          {t("projectsTitle")}:
           {isVisible && (
             <>
               <CountUp duration={3.5} end={25} />

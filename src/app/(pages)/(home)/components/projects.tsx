@@ -1,19 +1,23 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
 import projects from "@/constants/projects.json";
 import { getIconByName } from "@/lib/stack";
+import useLangStore from "@/store/useLangStore";
 
 import { Button } from "@/components/ui/button";
 import { StackItem } from "@/components/global/stack-item";
 
 import { ChevronRightIcon, ExternalLinkIcon } from "lucide-react";
-
 interface ProjectProps {
   recent?: boolean;
 }
 
 export const Projects = ({ recent = false }: ProjectProps) => {
+  const { t } = useLangStore();
+
   const wantedProjcets = [
     "Satnica",
     "PentestPad",
@@ -34,7 +38,9 @@ export const Projects = ({ recent = false }: ProjectProps) => {
 
   return (
     <section>
-      {recent && <h2 className="text-4xl font-bold mb-6">Recent Projects</h2>}
+      {recent && (
+        <h2 className="text-4xl font-bold mb-6">{t("recentProjects")}</h2>
+      )}
       <div className="flex flex-col gap-20">
         {displayedProjects.map((project) => (
           <div key={project.name}>
@@ -64,12 +70,14 @@ export const Projects = ({ recent = false }: ProjectProps) => {
             </div>
             {project.status && (
               <p className="opacity-80 mt-2 text-sm text-destructive -mb-2">
-                Status: {project.status}
+                Status: {t(`projects.${project.name}.status`)}
               </p>
             )}
-            <p className="opacity-60 mt-2 text-sm">Type: {project.type}</p>
+            <p className="opacity-60 mt-2 text-sm">
+              {t("type")}: {t(`projects.${project.name}.type`)}
+            </p>
             <p className="text-base opacity-80 max-w-[800px] mt-2 mb-6">
-              {project.description}
+              {t(`projects.${project.name}.description`)}
             </p>
             <div className="flex flex-wrap gap-2 mb-2">
               {project.stack.map((item) => (
@@ -93,12 +101,11 @@ export const Projects = ({ recent = false }: ProjectProps) => {
       {recent && (
         <div className="flex flex-col gap-4 mt-12">
           <h3 className="text-2xl md:text-3xl font-bold text-center max-w-[660px] mx-auto">
-            And there&apos;s much more! You can view the rest of the projects
-            that I&apos;ve worked on here:
+            {t("andMore")}
           </h3>
           <Button size="lg" asChild className="w-fit mx-auto">
             <Link href="/work">
-              <span className="text-lg font-bold">View all projects</span>
+              <span className="text-lg font-bold">{t("viewAllProjects")}</span>
               <ChevronRightIcon className="size-5" />
             </Link>
           </Button>

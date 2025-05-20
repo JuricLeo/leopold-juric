@@ -13,22 +13,122 @@
     "fullStackDeveloper": "Full Stack Developer",
     "aboutMeDescription": "Passionate software engineer with main focus being on Frontend development. I've contributed to various projects, collaborating with different teams to bring ideas to life in the best possible way.",
     "myMissionDescription": "With my experience covering multiple technologies I keep focusing on creating modern, scalable and user-friendly web applications.",
-    "missionQuote": "Design like you'll maintain it. Because you will. 🚀"
-  },
-  "hr": {
-    "home": "Naslovna",
-    "myWork": "Moj rad",
-    "blog": "Blog",
-    "aboutMe": "O meni",
-    "myMission": "Moja misija",
-    "heyThere": "Pozdrav",
-    "Iam": "Zovem se",
-    "andIam": "i ja sam",
-    "softwareEngineer": "Softver inženjer",
-    "frontendDeveloper": "Frontend Developer",
-    "fullStackDeveloper": "Full Stack Developer",
-    "aboutMeDescription": "Strastveni inženjer softvera s glavnim fokusom na Frontend razvoju. Sudjelovao sam u različitim projektima, surađujući s različitim timovima kako bi ideje postale realnost u najboljem mogućem obliku.",
-    "myMissionDescription": "Sa svojim iskustvom koje obuhvaća više tehnologija, stalno se fokusiram na stvaranje modernih, skalabilnih i korisnički prijateljskih web aplikacija.",
-    "missionQuote": "Dizajniraj kao da ćeš morati održavati. Jer hoćeš. 🚀"
+    "missionQuote": "Design like you'll maintain it. Because you will. 🚀",
+    "mergedPRs": "Merged PRs",
+    "contributionsLastYear": "Contributions last year",
+    "projectsTitle": "Projects",
+    "aboutDescription1": "I've been coding for over 4 years, starting my journey in 2021. After getting the hang of HTML, CSS and JavaScript I started freelancing, creating websites for local businesses.",
+    "aboutDescription2": "Later on I started using frameworks like React, Next.js and Laravel. I recreated popular SaaS applications like: Airbnb, LMS, Discord, etc. and even created some small applications myself.",
+    "aboutDescription3": "So far I've worked accross multiple projects with multiple teams using different technologies and tools. I'm always looking for new challenges so I can contribute with my experience and skills.",
+    "myStack": "My stack",
+    "viewMyGitHub": "View my GitHub",
+    "contactMe": "Contact me",
+    "recentProjects": "Recent projects",
+    "type": "Type",
+    "projects": {
+      "Satnica": {
+        "status": "Work in progress...",
+        "type": "Personal",
+        "description": "Satnica is a web application designed to simplify time tracking for students and employers. It allows students to easily log their work hours, while employers can manage and monitor their team's work time efficiently."
+      },
+      "Financial Focus": {
+        "status": "",
+        "type": "Personal",
+        "description": "Financial Focus is a web application where users can track their personal finances and get insights into their spending habits using interactive graphs."
+      },
+      "Pets of TVZ": {
+        "status": "",
+        "type": "Personal",
+        "description": "Pets of TVZ is a simple web application where users (students of University of Applied Sciences in Zagreb) can share information about their pets with one another."
+      },
+      "Am I cooked": {
+        "status": "",
+        "type": "Personal",
+        "description": "Goofy app for students to check if they are 'cooked' if they start studying now, based on the time left until their exams. This app was made in < 1 hour for fun."
+      },
+      "Beriko": {
+        "status": "",
+        "type": "Freelance",
+        "description": "Company website for Beriko, a company that builds high-quality prefabricated buildings: halls, bungalows, warehouses, workshops and garages."
+      },
+      "Klesarstvo Kirinec Dejan": {
+        "status": "",
+        "type": "Freelance",
+        "description": "Company website for Klesarstvo Kirinec Dejan, a company that specializes in stone carving and shaping, creating custom stone architecture, stone installation and restoration of stone structures."
+      },
+      "Neven Jurić d.o.o.": {
+        "status": "",
+        "type": "Freelance",
+        "description": "Company website for Neven Jurić d.o.o., a company that offers bookkeeping services for small businesses, sole proprietorships, family farms, and citizen associations."
+      },
+      "L'avor": {
+        "status": "Not active anymore...",
+        "type": "Freelance",
+        "description": "Company website for L'avor, a company that has years of experience in crafting ceramic furniture, combining cutting-edge production technology with an artistic touch in every unique piece."
+      },
+      "Restaurant Royal": {
+        "status": "",
+        "type": "Personal",
+        "description": "Simple HTML/CSS/JS/PHP website for a restaurant. Focus is on design."
+      },
+      "PentestPad": {
+        "status": "",
+        "type": "Employment",
+        "description": "A tool built by pentesters, for pentesters. Designed to solve the real challenges of security testing teams."
+      },
+      "Pinky CyberSafe": {
+        "status": "",
+        "type": "Employment",
+        "description": "Pinky CyberSafe® is the ultimate cybersecurity solution designed specifically for small and medium enterprises (SMEs)."
+      },
+      "CCChelp": {
+        "status": "",
+        "type": "Employment",
+        "description": "Complete competent compliance for your business. Certs, Equipment & Vehicles, Get, all your Assets certified on time. Never miss your next schedule."
+      },
+      "Discord": {
+        "status": "",
+        "type": "Clone",
+        "description": "Discord is a free voice, video, and text chat platform designed for communities, friends, and teams to connect and communicate in real time."
+      },
+      "Notion": {
+        "status": "",
+        "type": "Clone",
+        "description": "Notion is an all-in-one workspace where you can write, plan, organize, and collaborate through notes, databases, tasks, and more."
+      },
+      "Spotify": {
+        "status": "",
+        "type": "Clone",
+        "description": "Spotify is a digital music streaming platform that gives you access to millions of songs, podcasts, and playlists from artists around the world."
+      },
+      "Airbnb": {
+        "status": "",
+        "type": "Clone",
+        "description": "Airbnb is an online platform that allows people to rent out their homes or book unique accommodations and experiences around the world."
+      },
+      "LMS": {
+        "status": "",
+        "type": "Clone",
+        "description": "An LMS (Learning Management System) is a software platform used to create, deliver, and manage educational courses, training programs, or learning and development content."
+      },
+      "E-commerce store and admin panel": {
+        "status": "",
+        "type": "Clone",
+        "description": "An e-commerce store is an online platform where customers can browse and purchase products, while the admin panel is a backend dashboard that allows store owners to manage products, orders, customers, and store settings."
+      },
+      "AI SaaS Companion": {
+        "status": "",
+        "type": "Clone",
+        "description": "An AI SaaS Companion is a cloud-based tool powered by artificial intelligence designed to interact with the user based on their input."
+      },
+      "Multi-functional AI SaaS": {
+        "status": "",
+        "type": "Clone",
+        "description": "A multi-functional AI SaaS platform that can talk, generate music, create videos, design images, and write code—offering an all-in-one creative and productivity companion powered by artificial intelligence."
+      }
+    },
+    "andMore": "And there's much more! You can view the rest of the projects that I've worked on here:",
+    "viewAllProjects": "View all projects",
+    "contactMeDescription": "I'm always looking for new challenges and an opportunity to take on exciting projects. If you have a project in mind or need help with something, feel free to contact me."
   }
 }
