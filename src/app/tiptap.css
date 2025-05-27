@@ -1,282 +1,274 @@
 @import "./globals.css";
- 
+
 /* Table */
-.article-content {
-    .table-scroll-container {
-        width: 100%;
-        overflow-x: auto;
-        margin: 0.5rem 0;
-    }
- 
-    table {
-        transform: translateY(10px);
-        border-collapse: collapse;
-        margin: 0;
-        overflow: hidden;
-        table-layout: fixed;
-        width: 100%;
-        margin-bottom: 10px;
- 
-        td,
-        th {
-            @apply border border-[rgba(61,37,20,0.32)] dark:border-[rgba(223,223,223,0.32)] text-white;
-            box-sizing: border-box;
-            min-width: 1em;
-            padding: 6px 8px;
-            position: relative;
-            vertical-align: top;
- 
-            > * {
-                margin-bottom: 0;
-            }
-        }
- 
-        th {
-            @apply bg-[rgba(61,37,20,0.1)] dark:bg-[rgba(83,78,75,0.5)] text-black dark:text-white;
-            font-weight: bold;
-            text-align: left;
-        }
- 
-        td {
-            @apply bg-transparent text-black dark:text-white;
-        }
- 
-        .selectedCell:after {
-            background: rgba(149, 149, 150, 0.2);
-            content: "";
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            pointer-events: none;
-            position: absolute;
-            z-index: 2;
-        }
- 
-        .column-resize-handle {
-            background-color: var(--primary);
-            bottom: -2px;
-            pointer-events: none;
-            position: absolute;
-            right: -2px;
-            top: 0;
-            width: 4px;
-        }
-    }
-}
- 
-/* Code */
-.article-content {
-    pre {
-        @apply bg-[#2E2B29] text-white;
-        border-radius: 0.5rem;
-        font-family: "JetBrainsMono", monospace;
-        margin: 0.5em 0;
-        padding: 0.75rem 1rem;
- 
-        code {
-            padding: 0;
-            background: none;
-        }
- 
-        /* Code styling */
-        .hljs-comment,
-        .hljs-quote {
-            color: #616161;
-        }
- 
-        .hljs-variable,
-        .hljs-template-variable,
-        .hljs-attribute,
-        .hljs-tag,
-        .hljs-regexp,
-        .hljs-link,
-        .hljs-name,
-        .hljs-selector-id,
-        .hljs-selector-class {
-            color: #f98181;
-        }
- 
-        .hljs-number,
-        .hljs-meta,
-        .hljs-built_in,
-        .hljs-builtin-name,
-        .hljs-literal,
-        .hljs-type,
-        .hljs-params {
-            color: #fbbc88;
-        }
- 
-        .hljs-string,
-        .hljs-symbol,
-        .hljs-bullet {
-            color: #b9f18d;
-        }
- 
-        .hljs-title,
-        .hljs-section {
-            color: #faf594;
-        }
- 
-        .hljs-keyword,
-        .hljs-selector-tag {
-            color: #70cff8;
-        }
- 
-        .hljs-emphasis {
-            font-style: italic;
-        }
- 
-        .hljs-strong {
-            font-weight: 700;
-        }
-    }
- 
-    code {
-        @apply bg-[#2E2B29] text-white;
-        border-radius: 0.25rem;
-        padding: 0.2rem 0.4rem;
-        font-family: "JetBrainsMono", monospace;
-        font-size: 0.9em;
-    }
-}
- 
-/* Links */
-.article-content {
-    a {
-        @apply text-primary hover:underline hover:text-primary-hover cursor-pointer;
-    }
-}
- 
-/* Lists */
-.article-content {
-    ul,
-    ol {
-        padding: 0 1rem;
-        margin: 0.25rem 1rem 0.25rem 0.4rem;
-    }
- 
-    ul li {
-        list-style-type: disc;
- 
-        p {
-            margin-top: 0.25em;
-            font-size: 14px !important;
-        }
- 
-        a {
-            font-size: 14px !important;
-        }
-    }
- 
-    ol li {
-        list-style-type: decimal;
- 
-        p {
-            margin-top: 0.25em;
-            margin-bottom: 0.25em;
-            font-size: 14px !important;
-        }
- 
-        a {
-            font-size: 14px !important;
-        }
-    }
-}
- 
-/* Task lists */
-.article-content {
-    ul[data-type="taskList"] {
-        list-style: none;
-        margin-left: 0;
-        padding: 0;
- 
-        li {
-            align-items: flex-start;
-            display: flex;
- 
-            > label {
-                flex: 0 0 auto;
-                margin-right: 0.5rem;
-                user-select: none;
-                margin-top: 0.45rem;
-            }
- 
-            > div {
-                flex: 1 1 auto;
-            }
-        }
- 
-        input[type="checkbox"] {
-            cursor: pointer;
-            border-radius: 4px;
-            border: 2px solid rgb(var(--primary));
-            background-color: rgb(var(--background));
-        }
- 
-        input[type="checkbox"]:checked {
-            background-color: rgb(var(--primary));
-            accent-color: rgb(var(--primary));
-        }
- 
-        ul[data-type="taskList"] {
-            margin: 0;
-        }
-    }
-}
- 
-.article-content {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+.tiptap {
+  .table-scroll-container {
     width: 100%;
- 
-    /* Add these new rules */
-    * {
-        white-space: pre-wrap !important;
-        word-break: break-word;
-    }
- 
-    p,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    li,
+    overflow-x: auto;
+    margin: 0.5rem 0;
+  }
+
+  a {
+    @apply text-primary hover:underline cursor-pointer;
+  }
+
+  table {
+    transform: translateY(10px);
+    border-collapse: collapse;
+    margin: 0;
+    overflow: hidden;
+    table-layout: fixed;
+    width: 100%;
+    margin-bottom: 10px;
+
     td,
     th {
-        overflow-wrap: break-word;
-        word-wrap: break-word;
-        word-break: break-word;
-        hyphens: auto;
+      @apply border border-[rgba(61,37,20,0.32)] dark:border-[rgba(223,223,223,0.32)] text-white;
+      box-sizing: border-box;
+      min-width: 1em;
+      padding: 6px 8px;
+      position: relative;
+      vertical-align: top;
+
+      > * {
+        margin-bottom: 0;
+      }
     }
- 
-    pre,
+
+    th {
+      @apply bg-[rgba(61,37,20,0.1)] dark:bg-[rgba(83,78,75,0.5)] text-black dark:text-white;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    td {
+      @apply bg-transparent text-black dark:text-white;
+    }
+
+    .selectedCell:after {
+      background: rgba(149, 149, 150, 0.2);
+      content: "";
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      pointer-events: none;
+      position: absolute;
+      z-index: 2;
+    }
+
+    .column-resize-handle {
+      background-color: var(--primary);
+      bottom: -2px;
+      pointer-events: none;
+      position: absolute;
+      right: -2px;
+      top: 0;
+      width: 4px;
+    }
+  }
+}
+
+/* Code */
+.tiptap {
+  pre {
+    @apply text-white;
+    border-radius: 0.5rem;
+    font-family: "JetBrainsMono", monospace;
+    margin: 0.5em 0;
+    padding: 0.75rem 1rem;
+
     code {
-        white-space: pre-wrap !important;
-        word-break: break-all;
+      padding: 0;
+      background: none;
     }
+
+    /* Code styling */
+    .hljs-comment,
+    .hljs-quote {
+      color: #616161;
+    }
+
+    .hljs-variable,
+    .hljs-template-variable,
+    .hljs-attribute,
+    .hljs-tag,
+    .hljs-regexp,
+    .hljs-link,
+    .hljs-name,
+    .hljs-selector-id,
+    .hljs-selector-class {
+      color: #f98181;
+    }
+
+    .hljs-number,
+    .hljs-meta,
+    .hljs-built_in,
+    .hljs-builtin-name,
+    .hljs-literal,
+    .hljs-type,
+    .hljs-params {
+      color: #fbbc88;
+    }
+
+    .hljs-string,
+    .hljs-symbol,
+    .hljs-bullet {
+      color: #b9f18d;
+    }
+
+    .hljs-title,
+    .hljs-section {
+      color: #faf594;
+    }
+
+    .hljs-keyword,
+    .hljs-selector-tag {
+      color: #70cff8;
+    }
+
+    .hljs-emphasis {
+      font-style: italic;
+    }
+
+    .hljs-strong {
+      font-weight: 700;
+    }
+  }
+
+  code {
+    @apply bg-[#2E2B29] text-white;
+    border-radius: 0.25rem;
+    padding: 0.2rem 0.4rem;
+    font-family: "JetBrainsMono", monospace;
+    font-size: 0.9em;
+  }
 }
- 
-.article-content p:empty {
-    min-height: 1em;
-    display: block;
-    content: " ";
+
+/* Lists */
+.tiptap {
+  ul,
+  ol {
+    padding: 0 1rem;
+    margin: 0.25rem 1rem 0.25rem 0.4rem;
+  }
+
+  ul li {
+    list-style-type: disc;
+
+    p {
+      margin-top: 0.25em;
+      font-size: 14px !important;
+    }
+
+    a {
+      font-size: 14px !important;
+    }
+  }
+
+  ol li {
+    list-style-type: decimal;
+
+    p {
+      margin-top: 0.25em;
+      margin-bottom: 0.25em;
+      font-size: 14px !important;
+    }
+
+    a {
+      font-size: 14px !important;
+    }
+  }
 }
- 
+
+/* Task lists */
+.tiptap {
+  ul[data-type="taskList"] {
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+
+    li {
+      align-items: flex-start;
+      display: flex;
+
+      > label {
+        flex: 0 0 auto;
+        margin-right: 0.5rem;
+        user-select: none;
+        margin-top: 0.45rem;
+      }
+
+      > div {
+        flex: 1 1 auto;
+      }
+    }
+
+    input[type="checkbox"] {
+      cursor: pointer;
+      border-radius: 4px;
+      border: 2px solid rgb(var(--primary));
+      background-color: rgb(var(--background));
+    }
+
+    input[type="checkbox"]:checked {
+      background-color: rgb(var(--primary));
+      accent-color: rgb(var(--primary));
+    }
+
+    ul[data-type="taskList"] {
+      margin: 0;
+    }
+  }
+}
+
+.tiptap {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  width: 100%;
+
+  /* Add these new rules */
+  * {
+    white-space: pre-wrap !important;
+    word-break: break-word;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  li,
+  td,
+  th {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  pre,
+  code {
+    white-space: pre-wrap !important;
+    word-break: break-all;
+  }
+}
+
+.tiptap p:empty {
+  min-height: 1em;
+  display: block;
+  content: " ";
+}
+
 /* Or an alternative approach */
-.article-content p:empty::after {
-    content: "\00a0"; /* Non-breaking space */
-    display: inline-block;
+.tiptap p:empty::after {
+  content: "\00a0"; /* Non-breaking space */
+  display: inline-block;
 }
- 
+
 /* Blockquote */
 .blockquote {
-    @apply pl-3 border-l-2 border-muted italic;
-}
-
-
-.donda {
-    background-color: red;
+  @apply pl-3 border-l-2 border-muted italic;
 }

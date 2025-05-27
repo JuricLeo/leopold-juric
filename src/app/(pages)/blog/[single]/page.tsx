@@ -3,6 +3,7 @@ import { format } from "date-fns";
 import Image from "next/image";
 import { Suspense } from "react";
 import "@/app/tiptap.css";
+import SafeHtml from "@/components/global/safe-html";
 
 export type BlogParamsType = Promise<{ single: string }>;
 export type SearchParamsType = Promise<
@@ -37,7 +38,7 @@ async function SingleBlog({ params }: { params: BlogParamsType }) {
   }
 
   return (
-    <div className="flex flex-col gap-12">
+    <div className="flex flex-col gap-12 donda">
       <div className="flex flex-col md:flex-row gap-12 items-stretch">
         <div className="relative w-full md:w-[320px] lg:w-[420px] aspect-[4/3]">
           <Image
@@ -60,9 +61,9 @@ async function SingleBlog({ params }: { params: BlogParamsType }) {
           </div>
         </div>
       </div>
-      <div
-        className="article-content"
-        dangerouslySetInnerHTML={{ __html: blog.content }}
+      <SafeHtml
+        html={blog.content}
+        className="tiptap max-w-full lg:max-w-[900px] mx-auto prose prose-sm md:prose-base prose-img:w-full prose-img:max-w-full"
       />
     </div>
   );
