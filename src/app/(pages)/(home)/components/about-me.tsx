@@ -8,8 +8,6 @@ import useLangStore from "@/store/useLangStore";
 export const AboutMe = () => {
   const { t } = useLangStore();
 
-  const year = new Date().getFullYear() - 2021;
-
   return (
     <section className="flex-1 flex flex-col gap-4 md:my-8">
       <h2 className="text-2xl font-bold underline">{t("aboutMe")}</h2>

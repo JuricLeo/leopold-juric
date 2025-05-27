@@ -3,7 +3,7 @@ import translations from "@/constants/lang.json";
 
 interface LanguageState {
   selectedLanguage: string;
-  translations: Record<string, any>;
+  translations: Record<string, unknown>;
   setSelectedLanguage: (language: string) => void;
   t: (key: string) => string;
 }
@@ -16,9 +16,13 @@ const useLangStore = create<LanguageState>((set) => {
   }
 
   // Helper function to access nested object properties using a path string
-  const getNestedValue = (obj: any, path: string): any => {
+  const getNestedValue = (obj: unknown, path: string): unknown => {
     return path.split(".").reduce((prev, curr) => {
-      return prev && prev[curr] !== undefined ? prev[curr] : undefined;
+      if (prev && typeof prev === "object" && curr in prev) {
+        // @ts-expect-error: Index signature
+        return prev[curr];
+      }
+      return undefined;
     }, obj);
   };
 
@@ -35,7 +39,7 @@ const useLangStore = create<LanguageState>((set) => {
     t: (key) => {
       const lang = selectedLanguage as keyof typeof translations;
       const translatedValue = getNestedValue(translations[lang], key);
-      return translatedValue !== undefined ? translatedValue : key;
+      return typeof translatedValue === "string" ? translatedValue : key;
     },
   };
 });

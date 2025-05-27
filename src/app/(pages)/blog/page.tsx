@@ -5,6 +5,8 @@ import { format } from "date-fns";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 
+export const dynamic = "force-dynamic";
+
 async function BlogList() {
   let blogs = [];
   let error = null;

@@ -2,8 +2,14 @@ import { supabase } from "@/lib/supabase";
 import { format } from "date-fns";
 import Image from "next/image";
 import { Suspense } from "react";
+import "@/app/tiptap.css";
 
-async function SingleBlog({ params }: { params: { single: string } }) {
+export type BlogParamsType = Promise<{ single: string }>;
+export type SearchParamsType = Promise<
+  Record<string, string | string[] | undefined>
+>;
+
+async function SingleBlog({ params }: { params: BlogParamsType }) {
   const { single: slug } = await params;
   let blog;
   let error = null;
@@ -43,9 +49,7 @@ async function SingleBlog({ params }: { params: { single: string } }) {
         </div>
         <div className="flex flex-col flex-1">
           <div className="flex flex-col gap-3">
-            <h2 className="text-3xl font-bold max-w-[600px]">
-              {blog.title}
-            </h2>
+            <h2 className="text-3xl font-bold max-w-[600px]">{blog.title}</h2>
             <p className="text-muted-foreground">{blog.summary}</p>
           </div>
           <div className="flex gap-2 mt-6 md:mt-auto items-center">
@@ -56,15 +60,15 @@ async function SingleBlog({ params }: { params: { single: string } }) {
           </div>
         </div>
       </div>
+      <div
+        className="article-content"
+        dangerouslySetInnerHTML={{ __html: blog.content }}
+      />
     </div>
   );
 }
 
-export default function SingleBlogPage({
-  params,
-}: {
-  params: { single: string };
-}) {
+export default function SingleBlogPage({ params }: { params: BlogParamsType }) {
   return (
     <div className="mt-12">
       <Suspense fallback={<div>The blog is loading...</div>}>
