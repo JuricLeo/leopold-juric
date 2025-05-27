@@ -54,7 +54,7 @@ async function BlogList() {
                 <p className="text-muted-foreground">{blog.summary}</p>
               </div>
               <div className="flex gap-2 mt-6 md:mt-auto items-center">
-                <p className="text-sm bg-secondary py-1 px-3 w-fit">
+                <p className="text-sm text-secondary-foreground bg-secondary py-1 px-3 w-fit">
                   {blog.category}
                 </p>
                 <p className="text-sm">
