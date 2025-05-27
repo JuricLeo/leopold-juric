@@ -15,6 +15,7 @@ async function BlogList() {
     const { data, error: supabaseError } = await supabase
       .from("blogs")
       .select("*")
+      .eq("status", "published")
       .order("created_at", { ascending: false });
 
     if (supabaseError) throw supabaseError;

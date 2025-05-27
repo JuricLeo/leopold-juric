@@ -19,6 +19,7 @@ async function SingleBlog({ params }: { params: BlogParamsType }) {
     const { data, error: supabaseError } = await supabase
       .from("blogs")
       .select("*")
+      .eq("status", "published")
       .eq("slug", slug)
       .single();
 
