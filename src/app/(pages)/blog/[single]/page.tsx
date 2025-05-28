@@ -10,6 +10,34 @@ export type SearchParamsType = Promise<
   Record<string, string | string[] | undefined>
 >;
 
+export async function generateMetadata({ params }: { params: BlogParamsType }) {
+  const { single: slug } = await params;
+  const { data, error: supabaseError } = await supabase
+    .from("blogs")
+    .select("*")
+    .eq("status", "published")
+    .eq("slug", slug)
+    .single();
+
+  if (supabaseError) throw supabaseError;
+  const blog = data;
+
+  return {
+    title: blog.title,
+    description: blog.summary,
+    openGraph: {
+      title: blog.title,
+      description: blog.summary,
+      images: [blog.image],
+      type: "article",
+      publishedTime: blog.created_at,
+      authors: [{ name: "Leopold Jurić", url: "https://leopold-juric.com" }],
+    },
+    authors: [{ name: "Leopold Jurić", url: "https://leopold-juric.com" }],
+    keywords: [blog.metaTags],
+  };
+}
+
 async function SingleBlog({ params }: { params: BlogParamsType }) {
   const { single: slug } = await params;
   let blog;

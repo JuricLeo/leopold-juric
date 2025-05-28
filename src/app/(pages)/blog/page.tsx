@@ -4,8 +4,15 @@ import { Suspense } from "react";
 import { format } from "date-fns";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
+import { Metadata } from "next";
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "Blog",
+  description:
+    "Leopold Jurić's blog, articles, and thoughts. Read about my experiences, projects, and thoughts.",
+};
 
 async function BlogList() {
   let blogs = [];
