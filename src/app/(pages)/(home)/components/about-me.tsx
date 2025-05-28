@@ -15,17 +15,18 @@ export const AboutMe = () => {
       <p className="text-lg">{t("aboutDescription2")}</p>
       <p className="text-lg">{t("aboutDescription3")}</p>
       <div className="flex flex-wrap gap-4 mt-2">
-        <Button asChild className="w-fit">
+        <Button name="github" asChild className="w-fit">
           <a
             rel="noopener noreferrer"
             href="https://github.com/juricleo"
             target="_blank"
+            aria-label={t("viewMyGitHub")}
           >
             <SiGithub /> {t("viewMyGitHub")} <ChevronRight />
           </a>
         </Button>
-        <Button variant="outline" asChild className="w-fit">
-          <a rel="noopener noreferrer" href="mailto:ljurickc@gmail.com">
+        <Button name="email" variant="outline" asChild className="w-fit">
+          <a rel="noopener noreferrer" href="mailto:ljurickc@gmail.com" aria-label={t("contactMe")}>
             <Mail /> {t("contactMe")} <ChevronRight />
           </a>
         </Button>

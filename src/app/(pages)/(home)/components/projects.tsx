@@ -47,21 +47,22 @@ export const Projects = ({ recent = false }: ProjectProps) => {
             <div className="flex items-center gap-2">
               {project.link ? (
                 <a
+                  aria-label={project.name}
                   className="hover:opacity-80 inline-flex"
                   href={project.link}
                   target="_blank"
                 >
-                  <h6 className="border-b border-primary text-2xl font-bold text-primary flex">
+                  <h3 className="border-b border-primary text-2xl font-bold text-primary flex">
                     <span>{project.name}</span>
                     <ExternalLinkIcon className="size-4 ml-1.5 mt-1" />
-                  </h6>
+                  </h3>
                 </a>
               ) : (
                 <div className="inline-flex">
-                  <h6 className="text-2xl font-bold text-primary flex">
+                  <h3 className="text-2xl font-bold text-primary flex">
                     <span>{project.name}</span>
                     <ExternalLinkIcon className="size-4 ml-1.5 mt-1" />
-                  </h6>
+                  </h3>
                 </div>
               )}
               <p className="opacity-80 text-sm mt-1">
@@ -103,8 +104,13 @@ export const Projects = ({ recent = false }: ProjectProps) => {
           <h3 className="text-2xl md:text-3xl font-bold text-center max-w-[660px] mx-auto">
             {t("andMore")}
           </h3>
-          <Button size="lg" asChild className="w-fit mx-auto">
-            <Link href="/work">
+          <Button
+            name="viewAllProjects"
+            size="lg"
+            asChild
+            className="w-fit mx-auto"
+          >
+            <Link aria-label={t("viewAllProjects")} href="/work">
               <span className="text-lg font-bold">{t("viewAllProjects")}</span>
               <ChevronRightIcon className="size-5" />
             </Link>

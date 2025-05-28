@@ -78,26 +78,6 @@
   }
 }
 
-.bg-portrait {
-  background-color: #000;
-  position: relative;
-}
-
-.bg-portrait::before {
-  content: "";
-  opacity: 0.5;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/portrait-bg.png");
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-}
-
 @media (min-width: 768px) {
   .bg-portrait {
     background-image: none;

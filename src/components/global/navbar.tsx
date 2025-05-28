@@ -66,8 +66,8 @@ export const Navbar = () => {
         </div>
       </div>
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
-        <SheetTrigger className="md:hidden">
-          <Menu className="cursor-pointer size-7" />
+        <SheetTrigger aria-label="menu" name="menu" className="md:hidden">
+          <Menu name="hamburger-menu" className="cursor-pointer size-7" />
         </SheetTrigger>
         <SheetContent side="top" className="bg-secondary min-h-screen">
           <SheetHeader>

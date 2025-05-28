@@ -45,6 +45,7 @@ export const StackItem = ({
 }) => {
   return (
     <a
+      aria-label={icon.title}
       href={
         techUrls[icon.title] || `https://www.google.com/search?q=${icon.title}`
       }

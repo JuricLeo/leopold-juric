@@ -41,13 +41,22 @@ export const Hero = () => {
 
   return (
     <section>
-      <div className="min-h-80 w-full rounded-md p-8 relative bg-portrait shadow-lg text-white">
+      <div className="min-h-80 w-full rounded-md p-8 relative shadow-lg text-white overflow-hidden">
         <Image
-          className="absolute bottom-0 right-4 lg:right-24 w-[390px] hidden md:block opacity-50 lg:opacity-100"
+          src="/portrait-bg.png"
+          alt=""
+          fill
+          priority
+          className="object-cover object-center absolute md:hidden inset-0 z-0 opacity-50"
+          aria-hidden="true"
+        />
+        <Image
+          priority
+          className="absolute bottom-0 right-4 lg:right-24 w-[390px] hidden md:block opacity-50 lg:opacity-100 z-10"
           src="/portrait.png"
           alt="Leopold"
           width={390}
-          height={400}
+          height={518}
         />
         <div className="flex flex-col gap-4 z-10 relative">
           <h1 className="font-bold flex items-center gap-2">
@@ -78,7 +87,10 @@ export const Hero = () => {
           <i>{t("missionQuote")}</i>
         </div>
       </div>
-      <div ref={ref} className="flex flex-col md:flex-row gap-2 md:gap-0 items-left md:items-center md:justify-between mt-2">
+      <div
+        ref={ref}
+        className="flex flex-col md:flex-row gap-2 md:gap-0 items-left md:items-center md:justify-between mt-2"
+      >
         <div className="flex gap-2 items-center opacity-75 text-sm">
           <GitMerge size={16} />
           {t("mergedPRs")}:

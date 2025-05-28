@@ -24,6 +24,7 @@ export const Footer = () => {
             href={social.url}
             key={social.name}
             target="_blank"
+            aria-label={social.name}
           >
             {social.icon}
           </a>
