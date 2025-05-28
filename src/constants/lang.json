@@ -56,7 +56,7 @@
         "type": "Freelance",
         "description": "Company website for Klesarstvo Kirinec Dejan, a company that specializes in stone carving and shaping, creating custom stone architecture, stone installation and restoration of stone structures."
       },
-      "Neven Jurić d.o.o.": {
+      "Neven Jurić": {
         "status": "",
         "type": "Freelance",
         "description": "Company website for Neven Jurić d.o.o., a company that offers bookkeeping services for small businesses, sole proprietorships, family farms, and citizen associations."
@@ -135,26 +135,26 @@
   },
   "hr": {
     "home": "Početna",
-    "myWork": "Moji radovi",
+    "myWork": "Radovi",
     "blog": "Blog",
     "aboutMe": "O meni",
     "myMission": "Moja misija",
     "heyThere": "Pozdrav",
     "Iam": "Ja sam",
     "andIam": "i radim kao",
-    "softwareEngineer": "Software inženjer",
+    "softwareEngineer": "Softver inženjer",
     "frontendDeveloper": "Frontend developer",
     "fullStackDeveloper": "Full Stack developer",
-    "aboutMeDescription": "Entuzijastični software inženjer s fokusom na Frontend development. Sudjelovao sam u raznim projektima, surađujući s različitim timovima kako bih ideje realizirao na najbolji mogući način.",
-    "myMissionDescription": "S iskustvom u brojnim tehnologijama, nastavljam se fokusirati na izradu modernih, skalabilnih i user-friendly web aplikacija.",
+    "aboutMeDescription": "Strastveni sam inženjer softvera s fokusom na Frontend development. Sudjelovao sam u raznim projektima, surađujući s različitim timovima kako bih ideje realizirao na najbolji mogući način.",
+    "myMissionDescription": "Kroz rad s različitim tehnologijama stalno težim gradnji modernih, skalabilnih i jednostavnih web aplikacija koje korisnicima zaista imaju smisla.",
     "missionQuote": "Razvijaj kod kao da ćeš ga održavati. Jer hoćeš. 🚀",
     "mergedPRs": "Spojeni PR-ovi",
-    "contributionsLastYear": "Doprinosi prošle godine",
+    "contributionsLastYear": "Doprinosi kroz godinu dana",
     "projectsTitle": "Projekti",
     "aboutDescription1": "Programiram više od 4 godine, počevši svoj put 2021. Nakon što sam svladao HTML, CSS i JavaScript, počeo sam freelancati i izrađivati web stranice za lokalne tvrtke.",
     "aboutDescription2": "Kasnije sam počeo koristiti frameworke poput Reacta, Next.js-a i Laravela. Rekreirao sam popularne SaaS aplikacije poput: Airbnb-a, LMS-a, Discorda i dr., te sam razvio nekoliko manjih aplikacija samostalno.",
-    "aboutDescription3": "Do sada sam radio na različitim projektima s raznim timovima koristeći različite tehnologije i alate. Uvijek tražim nove izazove kojima mogu doprinijeti svojim iskustvom i vještinama.",
-    "myStack": "Moje tehnologije",
+    "aboutDescription3": "Sudjelovao sam u brojnim projektima s raznim timovima koristeći različite tehnologije i alate. Uvijek tražim nove izazove kojima mogu doprinijeti svojim iskustvom i vještinama.",
+    "myStack": "Tehnologije koje koristim",
     "viewMyGitHub": "Pogledaj moj GitHub",
     "contactMe": "Kontaktiraj me",
     "recentProjects": "Nedavni projekti",
@@ -162,22 +162,22 @@
     "projects": {
       "Satnica": {
         "status": "U izradi...",
-        "type": "Osobni",
+        "type": "Osobni projekt",
         "description": "Satnica je web aplikacija dizajnirana da pojednostavi praćenje radnog vremena za studente i poslodavce. Omogućuje studentima jednostavno bilježenje radnih sati, dok poslodavci mogu efikasno upravljati i nadzirati radno vrijeme svog tima."
       },
       "Financial Focus": {
         "status": "",
-        "type": "Osobni",
+        "type": "Osobni projekt",
         "description": "Financial Focus je web aplikacija gdje korisnici mogu pratiti svoje osobne financije i dobiti uvid u vlastite potrošačke navike pomoću interaktivnih grafova."
       },
       "Pets of TVZ": {
         "status": "",
-        "type": "Osobni",
+        "type": "Osobni projekt",
         "description": "Pets of TVZ je jednostavna web aplikacija gdje korisnici (studenti Tehničkog veleučilišta u Zagrebu) mogu međusobno dijeliti informacije o svojim kućnim ljubimcima."
       },
       "Am I cooked": {
         "status": "",
-        "type": "Osobni",
+        "type": "Osobni projekt",
         "description": "Zabavna aplikacija za studente koja provjerava jesu li 'gotovi' ako krenu učiti sada, temeljeno na vremenu preostalom do ispita. Aplikacija je napravljena u < 1 sat iz zabave."
       },
       "Beriko": {
@@ -190,7 +190,7 @@
         "type": "Freelance",
         "description": "Web stranica za Klesarstvo Kirinec Dejan, tvrtku specijaliziranu za klesanje i oblikovanje kamena, izradu kamene arhitekture po mjeri, ugradnju kamena i restauraciju kamenih struktura."
       },
-      "Neven Jurić d.o.o.": {
+      "Neven Jurić": {
         "status": "",
         "type": "Freelance",
         "description": "Web stranica za Neven Jurić d.o.o., tvrtku koja nudi knjigovodstvene usluge za male tvrtke, obrte, OPG-ove i udruge građana."
@@ -202,7 +202,7 @@
       },
       "Restaurant Royal": {
         "status": "",
-        "type": "Osobni",
+        "type": "Osobni projekt",
         "description": "Jednostavna HTML/CSS/JS/PHP stranica za restoran. Fokus je na dizajnu."
       },
       "PentestPad": {
