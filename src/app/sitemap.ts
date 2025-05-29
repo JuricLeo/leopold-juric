@@ -3,7 +3,6 @@ import { MetadataRoute } from "next";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   let blogs = [];
-  let error = null;
 
   try {
     const { data, error: supabaseError } = await supabase
@@ -14,9 +13,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     if (supabaseError) throw supabaseError;
     blogs = data;
-  } catch (err) {
-    console.error(err);
-    error = err;
+  } catch (error) {
+    console.error(error);
   }
 
   const blogEntries: MetadataRoute.Sitemap = blogs.map(
