@@ -13,10 +13,39 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const languageOptions = [
-  { label: "Hrvatski 🇭🇷", value: "hr" },
-  { label: "English 🇬🇧", value: "en" },
+  {
+    label: (
+      <span>
+        Hrvatski{" "}
+        <Image
+          src="/cro.svg"
+          alt="cro"
+          width={20}
+          height={14}
+          style={{ display: "inline", marginLeft: 4 }}
+        />
+      </span>
+    ),
+    value: "hr",
+  },
+  {
+    label: (
+      <span>
+        English{" "}
+        <Image
+          src="/usa.svg"
+          alt="usa"
+          width={20}
+          height={14}
+          style={{ display: "inline", marginLeft: 4 }}
+        />
+      </span>
+    ),
+    value: "en",
+  },
 ];
 
 export default function ChangeLanguage() {
@@ -69,7 +98,11 @@ export default function ChangeLanguage() {
           size="icon"
           className="text-3xl"
         >
-          {selectedLanguage === "hr" ? "🇭🇷" : "🇬🇧"}
+          {selectedLanguage === "hr" ? (
+            <Image src="/cro.svg" alt="cro" width="100" height="25" />
+          ) : (
+            <Image src="/usa.svg" alt="usa" width="100" height="25" />
+          )}
         </Button>
       </div>
     </div>

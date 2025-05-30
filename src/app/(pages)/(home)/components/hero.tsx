@@ -41,7 +41,7 @@ export const Hero = () => {
 
   return (
     <section>
-      <div className="min-h-80 w-full rounded-md p-8 relative shadow-lg text-white overflow-hidden">
+      <div className="min-h-80 w-full rounded-md p-8 relative shadow-lg text-white overflow-hidden bg-black">
         <Image
           src="/portrait-bg.png"
           alt=""
