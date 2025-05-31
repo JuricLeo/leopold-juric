@@ -72,7 +72,7 @@
 /* Code */
 .tiptap {
   pre {
-    @apply text-white;
+    @apply text-white bg-[#2E2B29];
     border-radius: 0.5rem;
     font-family: "JetBrainsMono", monospace;
     margin: 0.5em 0;
