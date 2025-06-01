@@ -144,7 +144,7 @@ export const metadata: Metadata = {
     siteName: "Leopold Jurić",
     images: [
       {
-        url: "https://leopold-juric.com/og-image.png",
+        url: "https://leopold-juric.com/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Leopold Jurić",
