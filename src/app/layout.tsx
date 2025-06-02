@@ -20,6 +20,7 @@ import {
 
 import { ThemeProvider } from "@/components/global/theme-provider";
 import ThemeDataProvider from "@/context/theme-data-provider";
+import Head from "next/head";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -136,26 +137,7 @@ export const metadata: Metadata = {
   ],
   creator: "Leopold Jurić",
   authors: [{ name: "Leopold Jurić" }],
-  openGraph: {
-    title: "Leopold Jurić",
-    description:
-      "Portfolio of Leopold Jurić, a fullstack web developer specializing in Laravel and Next.js.",
-    images: [
-      {
-        url: "https://www.leopold-juric.com/opengraph-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Leopold Jurić Portfolio",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Leopold Jurić",
-    description:
-      "Portfolio of Leopold Jurić, a fullstack web developer specializing in Laravel and Next.js.",
-    images: ["https://www.leopold-juric.com/opengraph-image.png"],
-  },
+
   robots: {
     index: true,
     follow: true,
@@ -175,6 +157,23 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={fontVariables}>
       <body className="antialiased">
+        <Head>
+          <meta
+            property="og:title"
+            content="Leopold Jurić - Fullstack Web Developer"
+          />
+          <meta
+            property="og:description"
+            content="Portfolio of Leopold Jurić, a fullstack web developer specializing in Laravel and Next.js. View projects, skills, and contact details."
+          />
+          <meta
+            property="og:image"
+            content="https://www.leopold-juric.com/og-image.jpg"
+          />
+          <meta property="og:url" content="https://www.leopold-juric.com" />
+          <meta property="og:type" content="website" />
+          <meta name="twitter:card" content="summary_large_image" />
+        </Head>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
