@@ -43,18 +43,18 @@ export const Hero = () => {
     <section>
       <div className="min-h-80 w-full rounded-md p-8 relative shadow-lg text-white overflow-hidden bg-black">
         <Image
-          src="/portrait-bg.png"
-          alt=""
+          src="/portrait.webp"
+          alt="Portrait"
           fill
           priority
-          className="object-cover object-center absolute md:hidden inset-0 z-0 opacity-50"
+          className="object-cover object-top absolute md:hidden inset-0 z-0 opacity-50"
           aria-hidden="true"
         />
         <Image
           priority
           className="absolute bottom-0 right-4 lg:right-24 w-[390px] hidden md:block opacity-50 lg:opacity-100 z-10"
-          src="/portrait.png"
-          alt="Leopold"
+          src="/portrait.webp"
+          alt="Portrait"
           width={390}
           height={518}
         />
