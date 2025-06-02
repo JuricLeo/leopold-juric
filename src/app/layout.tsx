@@ -137,7 +137,24 @@ export const metadata: Metadata = {
   creator: "Leopold Jurić",
   authors: [{ name: "Leopold Jurić" }],
   openGraph: {
-    images: ["/opengraph-image.png"],
+    title: "Leopold Jurić",
+    description:
+      "Portfolio of Leopold Jurić, a fullstack web developer specializing in Laravel and Next.js.",
+    images: [
+      {
+        url: "https://www.leopold-juric.com/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Leopold Jurić Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Leopold Jurić",
+    description:
+      "Portfolio of Leopold Jurić, a fullstack web developer specializing in Laravel and Next.js.",
+    images: ["https://www.leopold-juric.com/opengraph-image.png"],
   },
   robots: {
     index: true,
