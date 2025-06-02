@@ -135,16 +135,9 @@ export const metadata: Metadata = {
     "Leopold Jurić",
   ],
   creator: "Leopold Jurić",
-  authors: [{ name: "Leopold Jurić", url: "https://leopold-juric.com" }],
+  authors: [{ name: "Leopold Jurić" }],
   openGraph: {
-    title: "Leopold Jurić",
-    description:
-      "Portfolio of Leopold Jurić, a fullstack web developer specializing in Laravel and Next.js. View projects, skills, and contact details.",
-    url: "https://leopold-juric.com",
-    siteName: "Leopold Jurić",
     images: ["/opengraph-image.png"],
-    locale: "en_US",
-    type: "website",
   },
   robots: {
     index: true,
@@ -154,7 +147,7 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
-  metadataBase: new URL("https://leopold-juric.com"),
+  metadataBase: new URL("https://www.leopold-juric.com"),
 };
 
 export default function RootLayout({
