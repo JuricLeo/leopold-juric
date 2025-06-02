@@ -2,7 +2,7 @@ import "./globals.css";
 
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import type { Metadata } from "next";
+import { Metadata } from "next";
 import {
   JetBrains_Mono,
   Merriweather,
@@ -20,7 +20,6 @@ import {
 
 import { ThemeProvider } from "@/components/global/theme-provider";
 import ThemeDataProvider from "@/context/theme-data-provider";
-import Head from "next/head";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -137,7 +136,6 @@ export const metadata: Metadata = {
   ],
   creator: "Leopold Jurić",
   authors: [{ name: "Leopold Jurić" }],
-
   robots: {
     index: true,
     follow: true,
@@ -147,6 +145,18 @@ export const metadata: Metadata = {
     },
   },
   metadataBase: new URL("https://www.leopold-juric.com"),
+  twitter: {
+    card: "summary_large_image",
+    site: "leopold-juric.com",
+    creator: "@JurichLeo",
+    title: "Leopold Jurić - Personal Website Portfolio",
+    description:
+      "Portfolio of Leopold Jurić, a fullstack web developer specializing in Laravel and Next.js.",
+    images: ["https://www.leopold-juric.com/projects/Beriko.webp"],
+  },
+  openGraph: {
+    images: ["https://www.leopold-juric.com/opengraph-image.png"],
+  },
 };
 
 export default function RootLayout({
@@ -157,23 +167,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={fontVariables}>
       <body className="antialiased">
-        <Head>
-          <meta
-            property="og:title"
-            content="Leopold Jurić - Fullstack Web Developer"
-          />
-          <meta
-            property="og:description"
-            content="Portfolio of Leopold Jurić, a fullstack web developer specializing in Laravel and Next.js. View projects, skills, and contact details."
-          />
-          <meta
-            property="og:image"
-            content="https://www.leopold-juric.com/og-image.jpg"
-          />
-          <meta property="og:url" content="https://www.leopold-juric.com" />
-          <meta property="og:type" content="website" />
-          <meta name="twitter:card" content="summary_large_image" />
-        </Head>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
