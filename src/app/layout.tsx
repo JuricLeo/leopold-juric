@@ -152,10 +152,10 @@ export const metadata: Metadata = {
     title: "Leopold Jurić - Personal Website Portfolio",
     description:
       "Portfolio of Leopold Jurić, a fullstack web developer specializing in Laravel and Next.js.",
-    images: ["https://www.leopold-juric.com/projects/Beriko.webp"],
+    images: ["opengraph-image.png"],
   },
   openGraph: {
-    images: ["https://www.leopold-juric.com/opengraph-image.png"],
+    images: ["opengraph-image.png"],
   },
 };
 
