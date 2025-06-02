@@ -45,9 +45,10 @@ export const Hero = () => {
         <Image
           src="/portrait.webp"
           alt="Portrait"
-          fill
+          width={500}
+          height={644}
           priority
-          className="object-cover object-top absolute md:hidden inset-0 z-0 opacity-50"
+          className="absolute md:hidden inset-0 z-0 opacity-50"
           aria-hidden="true"
         />
         <Image

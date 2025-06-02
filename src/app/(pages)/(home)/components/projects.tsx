@@ -95,6 +95,7 @@ export const Projects = ({ recent = false }: ProjectProps) => {
               alt={project.name}
               width={1685}
               height={910}
+              loading="lazy"
             />
           </div>
         ))}
