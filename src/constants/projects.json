@@ -9,6 +9,42 @@
     "status": "Work in progress..."
   },
   {
+    "name": "Financial Focus",
+    "description": "Financial Focus is a web application where users can track their personal finances and get insights into their spending habits using interactive graphs.",
+    "link": "https://financial-focus.vercel.app",
+    "type": "Personal",
+    "date": "2024",
+    "stack": ["siNextdotjs", "siTailwindcss", "siClerk", "siPrisma"],
+    "status": ""
+  },
+  {
+    "name": "Pets of TVZ",
+    "description": "Pets of TVZ is a simple web application where users (students of University of Applied Sciences in Zagreb) can share information about their pets with one another.",
+    "link": "https://pets-of-tvz.vercel.app",
+    "type": "Personal",
+    "date": "2024",
+    "stack": ["siNextdotjs", "siTailwindcss", "siClerk", "siPrisma"],
+    "status": ""
+  },
+  {
+    "name": "Am I cooked",
+    "description": "Goofy app for students to check if they are 'cooked' if they start studying now, based on the time left until their exams. This app was made in < 1 hour for fun.",
+    "link": "https://am-i-cooked.vercel.app/",
+    "type": "Personal",
+    "date": "2025",
+    "stack": ["siNextdotjs", "siTailwindcss"],
+    "status": ""
+  },
+  {
+    "name": "Beriko",
+    "description": "Company website for Beriko, a company that builds high-quality prefabricated buildings: halls, bungalows, warehouses, workshops and garages.",
+    "link": "https://beriko.com",
+    "type": "Freelance",
+    "date": "2024",
+    "stack": ["siNextdotjs", "siTailwindcss", "siSupabase"],
+    "status": ""
+  },
+  {
     "name": "Klesarstvo Kirinec Dejan",
     "description": "Company website for Klesarstvo Kirinec Dejan, a company that specializes in stone carving and shaping, creating custom stone architecture, stone installation and restoration of stone structures.",
     "link": "https://www.klesarstvo-kirinec-dejan.com",
@@ -69,6 +105,78 @@
     "type": "Employment",
     "date": "2025",
     "stack": ["siLaravel", "siLivewire", "siTailwindcss"],
+    "status": ""
+  },
+  {
+    "name": "Discord",
+    "description": "Discord is a free voice, video, and text chat platform designed for communities, friends, and teams to connect and communicate in real time.",
+    "link": "https://github.com/JuricLeo/discord-clone",
+    "type": "Clone",
+    "date": "2023",
+    "stack": ["siNextdotjs", "siTailwindcss", "siMysql", "siPrisma"],
+    "status": ""
+  },
+  {
+    "name": "Notion",
+    "description": "Notion is an all-in-one workspace where you can write, plan, organize, and collaborate through notes, databases, tasks, and more.",
+    "link": "https://github.com/JuricLeo/notion-clone",
+    "type": "Clone",
+    "date": "2023",
+    "stack": ["siNextdotjs", "siTailwindcss", "siClerk"],
+    "status": ""
+  },
+  {
+    "name": "Spotify",
+    "description": "Spotify is a digital music streaming platform that gives you access to millions of songs, podcasts, and playlists from artists around the world.",
+    "link": "https://github.com/JuricLeo/spotify-clone",
+    "type": "Clone",
+    "date": "2023",
+    "stack": ["siNextdotjs", "siTailwindcss", "siStripe"],
+    "status": ""
+  },
+  {
+    "name": "Airbnb",
+    "description": "Airbnb is an online platform that allows people to rent out their homes or book unique accommodations and experiences around the world.",
+    "link": "https://github.com/JuricLeo/next13-airbnb-clone",
+    "type": "Clone",
+    "date": "2023",
+    "stack": ["siNextdotjs", "siTailwindcss", "siPrisma", "siMongodb"],
+    "status": ""
+  },
+  {
+    "name": "LMS",
+    "description": "An LMS (Learning Management System) is a software platform used to create, deliver, and manage educational courses, training programs, or learning and development content.",
+    "link": "https://github.com/JuricLeo/lms-clone",
+    "type": "Clone",
+    "date": "2023",
+    "stack": ["siNextdotjs", "siTailwindcss", "siStripe", "siPrisma"],
+    "status": ""
+  },
+  {
+    "name": "E-commerce store and admin panel",
+    "description": "An e-commerce store is an online platform where customers can browse and purchase products, while the admin panel is a backend dashboard that allows store owners to manage products, orders, customers, and store settings.",
+    "link": "https://github.com/JuricLeo/e-commerce-store",
+    "type": "Clone",
+    "date": "2023",
+    "stack": ["siNextdotjs", "siTailwindcss", "siMysql", "siPrisma"],
+    "status": ""
+  },
+  {
+    "name": "AI SaaS Companion",
+    "description": "An AI SaaS Companion is a cloud-based tool powered by artificial intelligence designed to interact with the user based on their input.",
+    "link": "https://github.com/JuricLeo/ai-saas-companion",
+    "type": "Clone",
+    "date": "2023",
+    "stack": ["siNextdotjs", "siTailwindcss", "siMysql", "siStripe"],
+    "status": ""
+  },
+  {
+    "name": "Multi-functional AI SaaS",
+    "description": "A multi-functional AI SaaS platform that can talk, generate music, create videos, design images, and write code—offering an all-in-one creative and productivity companion powered by artificial intelligence.",
+    "link": "https://github.com/JuricLeo/AI-saas-Genius",
+    "type": "Clone",
+    "date": "2023",
+    "stack": ["siNextdotjs", "siTailwindcss", "siMysql", "siStripe"],
     "status": ""
   }
 ]
