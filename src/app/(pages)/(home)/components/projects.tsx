@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import projects from "@/constants/projects1.json";
+import projects from "@/constants/projects.json";
 import { getIconByName } from "@/lib/stack";
 import useLangStore from "@/store/useLangStore";
 
