@@ -1,15 +1,15 @@
-import { SiGithub, SiLinkedin } from "react-icons/si";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const socials = [
   {
     name: "GitHub",
     url: "https://github.com/JuricLeo",
-    icon: <SiGithub size={24} />,
+    icon: <FaGithub size={24} />,
   },
   {
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/leopold-jurić/",
-    icon: <SiLinkedin size={24} />,
+    icon: <FaLinkedin size={24} />,
   },
 ];
 

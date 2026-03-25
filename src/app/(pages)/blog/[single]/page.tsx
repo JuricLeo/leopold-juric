@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Suspense } from "react";
 import "@/app/tiptap.css";
 import SafeHtml from "@/components/global/safe-html";
+import { normalizeSupabasePublicUrl } from "@/lib/normalize-supabase-url";
 
 export type BlogParamsType = Promise<{ single: string }>;
 export type SearchParamsType = Promise<
@@ -21,6 +22,7 @@ export async function generateMetadata({ params }: { params: BlogParamsType }) {
 
   if (supabaseError) throw supabaseError;
   const blog = data;
+  const imageUrl = normalizeSupabasePublicUrl(blog.image);
 
   return {
     title: blog.title,
@@ -28,7 +30,7 @@ export async function generateMetadata({ params }: { params: BlogParamsType }) {
     openGraph: {
       title: blog.title,
       description: blog.summary,
-      images: [blog.image],
+      images: [imageUrl],
       type: "article",
       publishedTime: blog.created_at,
       authors: [{ name: "Leopold Jurić", url: "https://leopold-juric.com" }],
@@ -66,12 +68,14 @@ async function SingleBlog({ params }: { params: BlogParamsType }) {
     );
   }
 
+  const imageUrl = normalizeSupabasePublicUrl(blog.image);
+
   return (
     <div className="flex flex-col gap-12 donda">
       <div className="flex flex-col md:flex-row gap-12 items-stretch">
         <div className="relative w-full md:w-[320px] lg:w-[420px] aspect-[4/3]">
           <Image
-            src={blog.image}
+            src={imageUrl}
             alt={blog.title}
             fill
             className="rounded-lg object-cover"

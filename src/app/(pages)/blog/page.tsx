@@ -5,6 +5,7 @@ import { format } from "date-fns";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import { Metadata } from "next";
+import { normalizeSupabasePublicUrl } from "@/lib/normalize-supabase-url";
 
 export const dynamic = "force-dynamic";
 
@@ -42,15 +43,18 @@ async function BlogList() {
 
   return (
     <div className="flex flex-col gap-12">
-      {blogs.map((blog, index) => (
-        <div key={blog.id}>
+      {blogs.map((blog, index) => {
+        const imageUrl = normalizeSupabasePublicUrl(blog.image);
+
+        return (
+          <div key={blog.id}>
           <Link
             href={`/blog/${blog.slug}`}
             className="flex flex-col md:flex-row gap-12 items-stretch group"
           >
             <div className="relative w-full md:w-[320px] lg:w-[420px] aspect-[4/3]">
               <Image
-                src={blog.image}
+                src={imageUrl}
                 alt={blog.title}
                 fill
                 className="rounded-lg object-cover"
@@ -74,8 +78,9 @@ async function BlogList() {
             </div>
           </Link>
           {index !== blogs.length - 1 && <Separator className="mt-12" />}
-        </div>
-      ))}
+          </div>
+        );
+      })}
     </div>
   );
 }

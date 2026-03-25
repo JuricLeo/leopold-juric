@@ -18,19 +18,19 @@ import {
   siMongodb,
   siXml,
   siBun,
-  siAffinitydesigner,
-  siAffinityphoto,
   siCinema4d,
   siDocker,
   siNpm,
   siVercel,
-  siAmazons3,
   siRedis,
   siStripe,
   siInertia,
   siClerk,
   siPrisma,
   siSupabase,
+  siAffinitydesigner,
+  siAffinityphoto,
+  siAmazons3,
 } from "simple-icons/icons";
 
 export const homePageStackIcons = [

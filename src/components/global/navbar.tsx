@@ -21,7 +21,7 @@ import {
 } from "@/components/ui/sheet";
 
 import { Menu } from "lucide-react";
-import { SiGithub, SiLinkedin } from "react-icons/si";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const Navbar = () => {
   const pathname = usePathname();
@@ -55,7 +55,7 @@ export const Navbar = () => {
             <Link
               className={cn(
                 "px-4 py-2 rounded-md",
-                pathname === route.href && "bg-muted"
+                pathname === route.href && "bg-muted",
               )}
               key={route.href}
               href={route.href}
@@ -79,7 +79,7 @@ export const Navbar = () => {
               <Link
                 className={cn(
                   "rounded-md w-fit px-4 py-2 text-2xl text-primary/50 font-bold hover:underline",
-                  pathname === route.href && "text-primary bg-primary/10"
+                  pathname === route.href && "text-primary bg-primary/10",
                 )}
                 onClick={() => setIsOpen(false)}
                 key={route.href}
@@ -100,14 +100,14 @@ export const Navbar = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <SiGithub size={24} />
+                  <FaGithub size={24} />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/leopold-jurić"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <SiLinkedin size={24} />
+                  <FaLinkedin size={24} />
                 </a>
               </div>
             </div>

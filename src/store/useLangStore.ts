@@ -10,8 +10,12 @@ interface LanguageState {
 
 const useLangStore = create<LanguageState>((set) => {
   let selectedLanguage = "en";
+  const hasLocalStorageGetItem =
+    typeof globalThis.localStorage?.getItem === "function";
+  const hasLocalStorageSetItem =
+    typeof globalThis.localStorage?.setItem === "function";
 
-  if (typeof window !== "undefined") {
+  if (typeof window !== "undefined" && hasLocalStorageGetItem) {
     selectedLanguage = localStorage.getItem("selectedLanguage") || "en";
   }
 
@@ -32,7 +36,7 @@ const useLangStore = create<LanguageState>((set) => {
     setSelectedLanguage: (language) => {
       selectedLanguage = language;
       set({ selectedLanguage: language });
-      if (typeof window !== "undefined") {
+      if (typeof window !== "undefined" && hasLocalStorageSetItem) {
         localStorage.setItem("selectedLanguage", language);
       }
     },
